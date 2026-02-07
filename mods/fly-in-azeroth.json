@@ -1,0 +1,14 @@
+{
+  "name": "fly-in-azeroth",
+  "description": "Enables flying in Azeroth",
+  "author": "suprsokr",
+  "repo": "https://github.com/suprsokr/fly-in-azeroth-mithril",
+  "tags": [],
+  "version": "1.0.0",
+  "mod_types": [
+    "dbc"
+  ],
+  "releases": {
+    "latest": "https://github.com/suprsokr/fly-in-azeroth-mithril/releases/tag/1.0.0"
+  }
+}

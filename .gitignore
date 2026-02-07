@@ -6,5 +6,3 @@
 
 # Don't ignore .git directory (needed for git to work)
 !.git/
-
-!.gitkeep
