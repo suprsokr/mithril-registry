@@ -1,0 +1,10 @@
+# Ignore all dot files
+.*
+
+# But don't ignore .gitignore itself
+!.gitignore
+
+# Don't ignore .git directory (needed for git to work)
+!.git/
+
+!.gitkeep

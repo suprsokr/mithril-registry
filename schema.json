@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Mithril Mod Registry Entry",
+  "description": "Schema for mod registration in the Mithril mod registry",
+  "type": "object",
+  "required": ["name", "description", "author", "repo"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "Unique mod name (lowercase, hyphens only)"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Short one-line description"
+    },
+    "author": {
+      "type": "string",
+      "description": "GitHub username of the mod author"
+    },
+    "repo": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the mod's git repository"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "spells", "items", "talents", "creatures", "quests",
+          "ui", "pvp", "pve", "balance", "fun", "quality-of-life",
+          "class", "race", "profession", "world", "dungeon", "raid",
+          "cosmetic", "utility", "framework"
+        ]
+      },
+      "description": "Searchable tags"
+    },
+    "version": {
+      "type": "string",
+      "description": "Latest version string"
+    },
+    "mod_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["dbc", "addon", "sql", "core", "binary-patch"]
+      },
+      "description": "Types of content in this mod"
+    },
+    "releases": {
+      "type": "object",
+      "description": "Optional pre-built release artifacts for non-mithril users. Mithril users install via `mithril registry install <name>`",
+      "properties": {
+        "latest": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the latest GitHub release with client.zip and/or server.zip"
+        }
+      }
+    }
+  }
+}
