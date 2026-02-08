@@ -1,0 +1,11 @@
+{
+  "name": "large-address-aware",
+  "description": "Enables the Large Address Aware flag in Wow.exe, allowing the client to use more than 2GB of RAM on 64-bit systems.",
+  "author": "suprsokr",
+  "repo": "https://github.com/suprsokr/large-address-aware-mithril",
+  "tags": [],
+  "version": "1.0.0",
+  "mod_types": [
+    "binary-patch"
+  ]
+}
