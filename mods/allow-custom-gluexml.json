@@ -1,0 +1,11 @@
+{
+  "name": "allow-custom-gluexml",
+  "description": "Disables the client's GlueXML/FrameXML integrity check.",
+  "author": "suprsokr",
+  "repo": "https://github.com/suprsokr/allow-custom-gluexml-mithril",
+  "tags": [],
+  "version": "1.0.0",
+  "mod_types": [
+    "binary-patch"
+  ]
+}
