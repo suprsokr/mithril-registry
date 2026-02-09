@@ -1,0 +1,13 @@
+{
+  "name": "custom-packets",
+  "description": "Bidirectional custom packet communication between WoW client addons and TrinityCore server scripts.",
+  "author": "",
+  "repo": "https://github.com/suprsokr/custom-packets-mithril",
+  "tags": [],
+  "version": "1.0.0",
+  "mod_types": [
+    "addon",
+    "core",
+    "binary-patch"
+  ]
+}
